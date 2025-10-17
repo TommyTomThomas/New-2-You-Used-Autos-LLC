@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory | New 2 You Used Autos LLC</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="brand">
+    <div class="name">New 2 You Used Autos LLC</div>
+    <small>Inventory</small>
+  </div>
+  <nav>
+    <a class="btn secondary" href="/">Home</a>
+    <a class="btn secondary" href="/admin">Owner Login</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="form-row" style="margin-bottom:12px;">
+    <input id="q" placeholder="Search make, model, color..." />
+    <select id="sort">
+      <option value="created_at">Newest</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="year-desc">Year: Newer</option>
+      <option value="year-asc">Year: Older</option>
+    </select>
+  </div>
+  <div id="grid" class="grid"></div>
+</main>
+
+<footer class="container">
+  <div>&copy; <span id="year"></span> New 2 You Used Autos LLC</div>
+</footer>
+
+<script src="/inventory.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

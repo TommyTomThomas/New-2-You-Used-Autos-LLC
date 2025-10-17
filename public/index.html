@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New 2 You Used Autos LLC</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <meta name="description" content="Quality pre-owned vehicles in stock. Uploads managed by the owner via secure admin panel." />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <div class="name">New 2 You Used Autos LLC</div>
+      <small>Quality pre-owned cars, trucks, and SUVs</small>
+    </div>
+    <nav>
+      <a class="btn secondary" href="/inventory">View Inventory</a>
+      <a class="btn secondary" href="tel:+1-000-000-0000">Call</a>
+      <a class="btn secondary" href="/admin">Owner Login</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <canvas id="smokeCanvas"></canvas>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <main class="container">
+    <h2>Shop with confidence</h2>
+    <p>Every vehicle is inspected and ready for the road. Financing guidance available. Browse our latest arrivals and find your next ride today.</p>
+    <p><a class="btn" href="/inventory">Browse Inventory</a></p>
+  </main>
+
+  <footer class="container">
+    <div>&copy; <span id="year"></span> New 2 You Used Autos LLC. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/animation.js"></script>
+</body>
+</html>
